@@ -1,5 +1,3 @@
-from zooAnimales.animal import Animal
-
 class Reptil(Animal):
     _listado = []
     iguanas, serpientes = 0
