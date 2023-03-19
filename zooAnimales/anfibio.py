@@ -25,7 +25,7 @@ class Anfibio(Animal):
         cls.ranas += 1 
 
     @classmethod
-    def crearSalamandras(cls, nombre, edad, genero):
+    def crearSalamandra(cls, nombre, edad, genero):
         cls(nombre, edad, "selva", genero, "negro y amarillo", False)
         cls.salamandras += 1 
 
