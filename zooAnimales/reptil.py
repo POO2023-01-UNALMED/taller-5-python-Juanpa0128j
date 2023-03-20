@@ -11,9 +11,9 @@ class Reptil(Animal):
         self._largoCola = largoCola
         Reptil._listado.append(self)
 
-    @classmethod
-    def cantidadReptiles(cls):
-        return len(cls._listado)
+    @staticmethod
+    def cantidadReptiles():
+        return len(Reptil._listado)
     
     @staticmethod
     def movimiento():
