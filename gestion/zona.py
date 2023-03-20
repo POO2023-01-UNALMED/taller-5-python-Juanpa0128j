@@ -5,9 +5,8 @@ class Zona():
         self._nombre = nombre
         self._zoo = zoo
 
-    @classmethod
-    def agregarAnimales(cls, animal):
-        cls._animales.append(animal)
+    def agregarAnimales(self, animal):
+        self._animales.append(animal)
     
     def cantidadAnimales(self):
         return len(self._animales)
