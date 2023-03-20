@@ -17,13 +17,13 @@ class Mamifero(Animal):
     
     @classmethod
     def crearCaballo(cls, nombre, edad, genero):
-        cls(nombre, edad, "pradera", genero, True, 4)
         cls.caballos += 1 
+        return cls(nombre, edad, "pradera", genero, True, 4)
 
     @classmethod
     def crearLeon(cls, nombre, edad, genero):
-        cls(nombre, edad, "selva", genero, True, 4)
         cls.leones += 1 
+        return cls(nombre, edad, "selva", genero, True, 4)
 
     def isPelaje(self):
         return self._pelaje

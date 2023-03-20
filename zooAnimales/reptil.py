@@ -21,13 +21,13 @@ class Reptil(Animal):
     
     @classmethod
     def crearIguana(cls, nombre, edad, genero):
-        cls(nombre, edad, "humedal", genero, "verde", 3)
-        cls.iguanas += 1 
+       cls.iguanas += 1 
+       return cls(nombre, edad, "humedal", genero, "verde", 3)
 
     @classmethod
     def crearSerpiente(cls, nombre, edad, genero):
-        cls(nombre, edad, "jungla", genero, "blanco", 1)
         cls.serpientes += 1 
+        return cls(nombre, edad, "jungla", genero, "blanco", 1)
 
     def getColorEscamas(self):
         return self._colorEscamas
